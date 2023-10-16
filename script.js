@@ -21,7 +21,7 @@ let data = [
     userId: 1,
     id: 4,
     title: "et porro tempora",
-    completed: true,
+    completed: false,
   },
   {
     userId: 1,
