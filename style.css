@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+*{padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: 'Roboto',sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.container{
+    margin-top: 15px;
+    box-shadow: 12px 19px 45px rgb(125, 240, 125);
+    /* transform: skew(150deg, -5deg); */
+    /* border: 5px solid rgb(92, 237, 92); */
+    padding: 35px 30px;
+    border-radius: 24px;
+    background: url(https://www.nicepng.com/png/detail/26-261285_green-tea-png-image-with-transparent-background-green.png),
+    linear-gradient(transparent,rgb(36, 198, 36));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+.sharik1{
+    position: absolute;
+    content: '';
+    width: 250px;
+    height: 250px;
+    background:radial-gradient(white,rgb(56, 243, 56));
+    border-radius: 50%;
+    opacity: .5;
+    animation: sharik1 4s infinite;
+}
+@keyframes sharik1{
+    0%{
+        top: 0%;
+        left: 0%;
+    }
+    50%{
+        top: 65%;
+        left: 40%;
+    }
+    75%{
+        top: 0%;
+        left: 55%;
+    }
+    100%{
+        top: 0%;
+        left: 0%;
+    }
+}
+.sharik2{
+    position: absolute;
+    content: '';
+    width: 150px;
+    height: 150px;
+    bottom: 100%;
+    left: 55%;
+    background:radial-gradient(white,rgb(59, 240, 59));
+    border-radius: 50%;
+    opacity: .5;
+    animation: sharik2 5s infinite ;
+}
+@keyframes sharik2{
+    50%{
+        bottom: 0%;
+        left: 0%;
+    }
+    75%{
+        top: 50%;
+        right:0%;
+    }
+    100%{
+        bottom: 0%;
+        left: 0%;  
+    }
+}
+.sharik3{
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 100px;
+    bottom: 20%;
+    left: 10%;
+    background:radial-gradient(white,rgb(98, 248, 98));
+    border-radius: 50%;
+    opacity: .5;
+    animation: sharik3 5s infinite alternate-reverse;
+}
+@keyframes sharik3{
+    50%{
+        top: 0%;
+        left: 70%;
+    }
+    75%{
+        top: 70%
+}
+100%{
+
+}
+}
+.sharik4{
+    position: absolute;
+    content: '';
+    top: 5%;
+    right: 15%;
+    width: 50px;
+    height: 50px;
+    background:radial-gradient(white,rgb(102, 237, 102));
+    border-radius: 50%;
+    opacity: .5;
+    animation: sharik4 5s infinite ;
+}
+@keyframes sharik4{
+    50%{
+        top: 80%;
+        left: 50%;
+    }
+    75%{
+        top: 70%;
+    }
+    100%{
+        top: 0%;
+
+    }
+}
+.add{
+    display: flex;
+    padding: 0px 0px 0px 8px;
+    border-radius: 10px;
+    width: 100%;
+    border: 2px solid rgb(102, 246, 102);
+    background: rgb(162, 244, 162);
+    opacity: 0.75;
+}
+.container .content{
+    
+}
+.container .content img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+.container .content h1{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    padding: 10px;
+    color: green;
+}
+.container .content h1 span{
+    padding: 20px;
+}
+.line{
+    width: 68%;
+    color: green;
+    border: 1px solid green;
+    margin: 15px;
+}
+.container .content input{
+border: 0;
+background: 0;
+}
+.container .content input[placeholder]{
+    font-size: 20px;
+    font-weight: 400;
+    width: 100%;
+}
+.container .content input+i{
+    background: rgb(92, 237, 92);
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-size: 30px;
+    color: green;
+}
+.do{
+    display: flex;
+    justify-content: flex-end;
+}
+ul{
+    padding-top: 10px;
+}
+ul li{
+    padding: 10px 0px 10px 10px;
+    border-radius: 10px;
+    background: rgb(198, 242, 198);
+    margin-top: 10px;
+    opacity: 0.75;
+    list-style: n;
+    font-size: 18px;
+    width: 100%;
+
+}
+ul .do li a{
+    background: green;
+    padding: 9px;
+    text-decoration: none;
+    
+}
+ul .do li a:active{
+    background: #fff;
+    transition: all .5s;
+}
+ul .do li .clear{
+    border-top-left-radius:10px ;
+    border-bottom-left-radius:10px ;
+}
+ul .do li .chekked{
+    border-top-right-radius:10px ;
+    border-bottom-right-radius:10px ;
+}
